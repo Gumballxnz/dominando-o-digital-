@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Regedit - Domine o Free Fire</title>
     <meta name="description"
-        content="A melhor Regedit e Sensi VIP para Free Fire. Suba capa fÃ¡cil, zero recuo e full vermelho.">
+        content="A melhor Regedit e Sensi VIP para Free Fire. Suba capa fácil, zero recuo e full vermelho.">
     <link rel="stylesheet" href="css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
@@ -25,7 +25,7 @@
             <div class="logo">ELITE<span class="highlight">REGEDIT</span></div>
             <nav>
                 <ul>
-                    <li><a href="#inicio">InÃ­cio</a></li>
+                    <li><a href="#inicio">Início</a></li>
                     <li><a href="#beneficios">Vantagens</a></li>
                     <li><a href="#produtos">Produtos</a></li>
                     <li><a href="#depoimentos">Depoimentos</a></li>
@@ -41,7 +41,7 @@
         <div class="particles" id="particles"></div>
         <div class="hero-content">
             <h1 class="glitch" data-text="DOMINE O SERVER">DOMINE O SERVER</h1>
-            <p>A Regedit Mobile mais potente do cenÃ¡rio. Full Vermelho, Zero Recuo e Anti-Ban.</p>
+            <p>A Regedit Mobile mais potente do cenário. Full Vermelho, Zero Recuo e Anti-Ban.</p>
             <div class="hero-buttons">
                 <a href="#produtos" class="btn-primary">GARANTIR MINHA SENSI</a>
                 <a href="#beneficios" class="btn-secondary">Saber Mais</a>
@@ -57,22 +57,22 @@
                 <div class="feature-card tilt-effect">
                     <i class="fas fa-crosshairs"></i>
                     <h3>Full Capa</h3>
-                    <p>Aumente drasticamente sua taxa de HS com nossa configuraÃ§Ã£o calibrada.</p>
+                    <p>Aumente drasticamente sua taxa de HS com nossa configuração calibrada.</p>
                 </div>
                 <div class="feature-card tilt-effect">
                     <i class="fas fa-mobile-alt"></i>
-                    <h3>OtimizaÃ§Ã£o Mobile</h3>
-                    <p>Leve e otimizado para nÃ£o pesar no seu celular. Roda liso.</p>
+                    <h3>Otimização Mobile</h3>
+                    <p>Leve e otimizado para não pesar no seu celular. Roda liso.</p>
                 </div>
                 <div class="feature-card tilt-effect">
                     <i class="fas fa-shield-alt"></i>
                     <h3>100% Seguro</h3>
-                    <p>MÃ©todos indetectÃ¡veis. Jogue na sua conta principal sem medo.</p>
+                    <p>Métodos indetectáveis. Jogue na sua conta principal sem medo.</p>
                 </div>
                 <div class="feature-card tilt-effect">
                     <i class="fas fa-rocket"></i>
                     <h3>Entrega Imediata</h3>
-                    <p>Receba seu acesso e tutorial de instalaÃ§Ã£o logo apÃ³s a compra.</p>
+                    <p>Receba seu acesso e tutorial de instalação logo após a compra.</p>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
                     <ul class="specs">
                         <li><i class="fas fa-check"></i> Regedit Mobile V1</li>
                         <li><i class="fas fa-check"></i> Sensi Calibrada</li>
-                        <li><i class="fas fa-check"></i> Suporte BÃ¡sico</li>
+                        <li><i class="fas fa-check"></i> Suporte Básico</li>
                         <li><i class="fas fa-check"></i> Anti-Ban</li>
                     </ul>
                     <button class="btn-buy" onclick="alert('Link de pagamento simulado!')">COMPRAR AGORA</button>
@@ -106,7 +106,7 @@
                         <li><i class="fas fa-check"></i> Sensi iPhone & Android</li>
                         <li><i class="fas fa-check"></i> Macro Otimizado</li>
                         <li><i class="fas fa-check"></i> Pack de Cursor</li>
-                        <li><i class="fas fa-check"></i> Suporte PrioritÃ¡rio 24/7</li>
+                        <li><i class="fas fa-check"></i> Suporte Prioritário 24/7</li>
                     </ul>
                     <button class="btn-buy" onclick="alert('Link de pagamento simulado!')">QUERO SER PRO</button>
                 </div>
@@ -118,7 +118,7 @@
                     <ul class="specs">
                         <li><i class="fas fa-check"></i> Apenas Sensi VIP</li>
                         <li><i class="fas fa-check"></i> Ajuste de DPI</li>
-                        <li><i class="fas fa-check"></i> Tutorial em VÃ­deo</li>
+                        <li><i class="fas fa-check"></i> Tutorial em Vídeo</li>
                         <li><i class="fas fa-times"></i> Sem Regedit</li>
                     </ul>
                     <button class="btn-buy" onclick="alert('Link de pagamento simulado!')">COMPRAR AGORA</button>
@@ -138,27 +138,27 @@
                             <div class="avatar"><i class="fas fa-user-ninja"></i></div>
                             <h4>Gabriel "HsKing"</h4>
                         </div>
-                        <p class="comment">"Achei que era mentira, mas a Sensi Ã© absurda. Subi pra Mestre em 3 dias.
+                        <p class="comment">"Achei que era mentira, mas a Sensi é absurda. Subi pra Mestre em 3 dias.
                             Recomendo demais!"</p>
-                        <div class="rating">â­â­â­â­â­</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
                     </div>
                     <div class="testimonial-card">
                         <div class="user-info">
                             <div class="avatar"><i class="fas fa-user-astronaut"></i></div>
                             <h4>Lucas "CapaEasy"</h4>
                         </div>
-                        <p class="comment">"Melhor investimento. NÃ£o dÃ¡ ban e a mira gruda na cabeÃ§a. O suporte me
+                        <p class="comment">"Melhor investimento. Não dá ban e a mira gruda na cabeça. O suporte me
                             ajudou a configurar tudo."</p>
-                        <div class="rating">â­â­â­â­â­</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
                     </div>
                     <div class="testimonial-card">
                         <div class="user-info">
                             <div class="avatar"><i class="fas fa-skull"></i></div>
                             <h4>Matheus "Sniper"</h4>
                         </div>
-                        <p class="comment">"Uso no campeonato e ninguÃ©m desconfia. Regedit muito lisa, parabÃ©ns pelo
+                        <p class="comment">"Uso no campeonato e ninguém desconfia. Regedit muito lisa, parabéns pelo
                             trabalho!"</p>
-                        <div class="rating">â­â­â­â­â­</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
                     </div>
                 </div>
             </div>
@@ -167,20 +167,20 @@
 
     <section id="faq" class="faq">
         <div class="container">
-            <h2 class="section-title">DÃšVIDAS <span class="highlight">FREQUENTES</span></h2>
+            <h2 class="section-title">DÚVIDAS <span class="highlight">FREQUENTES</span></h2>
             <div class="faq-item">
                 <h3>Funciona em quais celulares?</h3>
-                <p>Nossa Regedit Ã© compatÃ­vel com 99% dos dispositivos Android e tambÃ©m temos configuraÃ§Ãµes para iOS.
+                <p>Nossa Regedit é compatível com 99% dos dispositivos Android e também temos configurações para iOS.
                 </p>
             </div>
             <div class="faq-item">
-                <h3>DÃ¡ ban?</h3>
-                <p>NÃ£o! Utilizamos apenas arquivos de otimizaÃ§Ã£o de sensibilidade que nÃ£o alteram a memÃ³ria do jogo de
+                <h3>Dá ban?</h3>
+                <p>Não! Utilizamos apenas arquivos de otimização de sensibilidade que não alteram a memória do jogo de
                     forma maliciosa.</p>
             </div>
             <div class="faq-item">
                 <h3>Como recebo?</h3>
-                <p>O envio Ã© automÃ¡tico para seu e-mail ou WhatsApp apÃ³s a confirmaÃ§Ã£o do pagamento.</p>
+                <p>O envio é automático para seu e-mail ou WhatsApp após a confirmação do pagamento.</p>
             </div>
         </div>
     </section>
@@ -203,12 +203,6 @@
 
     <!-- Particles.js (Optional CDN for advanced particles, but we'll use CSS/Simple JS for now to keep it lightweight) -->
     <script src="js/script.js"></script>
-
-<!-- Vercel Analytics -->
-<script>
-(function(){if(window.location.hostname.includes('vercel.app')||document.querySelector('script[src*="/_vercel/insights"]')){var s=document.createElement('script');s.defer=true;s.src='/_vercel/insights/script.js';document.head.appendChild(s);var sp=document.createElement('script');sp.defer=true;sp.src='/_vercel/speed-insights/script.js';document.head.appendChild(sp);}})();
-</script>
 </body>
 
 </html>
-
