@@ -5,210 +5,570 @@
     <link rel="icon" href="favicon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Regedit - Domine o Free Fire</title>
+    <title>Dominando o Digital - Curso de Marketing Digital para Moçambicanos</title>
     <meta name="description"
-        content="A melhor Regedit e Sensi VIP para Free Fire. Suba capa fÃ¡cil, zero recuo e full vermelho.">
+        content="Aprenda Marketing Digital do zero ao avançado. Curso 100% online criado para moçambicanos que desejam transformar conhecimento em renda real na internet.">
+    <meta name="keywords" content="marketing digital, curso online, Moçambique, ganhar dinheiro online, redes sociais, afiliados">
     <link rel="stylesheet" href="css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-
-    <!-- Promo Bar removed -->
-
-    <header>
-    <link rel="icon" href="favicon.png" type="image/png">
+    <!-- Header -->
+    <header id="header">
         <div class="container">
-            <div class="logo">ELITE<span class="highlight">REGEDIT</span></div>
-            <nav>
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">Dominando<span class="highlight">Digital</span></span>
+            </div>
+            <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">InÃ­cio</a></li>
-                    <li><a href="#beneficios">Vantagens</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#modulos">Módulos</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
                     <li><a href="#depoimentos">Depoimentos</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
             </nav>
-            <a href="#produtos" class="btn-cta-small">Comprar Agora</a>
+            <a href="#inscricao" class="btn-cta-small">Quero Me Inscrever</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="inicio" class="hero">
-        <div class="hero-grid-bg"></div> <!-- Cyberpunk Grid -->
-        <div class="particles" id="particles"></div>
+        <div class="hero-bg-elements">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
         <div class="hero-content">
-            <h1 class="glitch" data-text="DOMINE O SERVER">DOMINE O SERVER</h1>
-            <p>A Regedit Mobile mais potente do cenÃ¡rio. Full Vermelho, Zero Recuo e Anti-Ban.</p>
+            <div class="hero-badge">
+                <span>🇲🇿 Feito para Moçambicanos</span>
+            </div>
+            <h1>Domine o <span class="gradient-text">Marketing Digital</span> e Transforme seu Conhecimento em Renda Real</h1>
+            <p class="hero-description">
+                Curso 100% online, do zero ao avançado. Aprenda a criar, crescer e monetizar negócios digitais mesmo com baixo investimento. Não precisas de experiência anterior — apenas vontade de aprender!
+            </p>
             <div class="hero-buttons">
-                <a href="#produtos" class="btn-primary">GARANTIR MINHA SENSI</a>
-                <a href="#beneficios" class="btn-secondary">Saber Mais</a>
+                <a href="#inscricao" class="btn-primary">
+                    <span>Quero Começar Agora</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#modulos" class="btn-secondary">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Ver Conteúdo</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">7+</span>
+                    <span class="stat-label">Módulos Completos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Online & Prático</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Acesso Vitalício</span>
+                </div>
             </div>
         </div>
-        <div class="hero-overlay"></div>
+        <div class="hero-visual">
+            <div class="floating-cards">
+                <div class="float-card card-1">
+                    <i class="fab fa-facebook"></i>
+                    <span>+50K seguidores</span>
+                </div>
+                <div class="float-card card-2">
+                    <i class="fab fa-instagram"></i>
+                    <span>Conteúdo viral</span>
+                </div>
+                <div class="float-card card-3">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Lucro real</span>
+                </div>
+                <div class="float-card card-4">
+                    <i class="fab fa-tiktok"></i>
+                    <span>Tendências</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="beneficios" class="features">
+    <!-- O que vais aprender Section -->
+    <section id="modulos" class="modules">
         <div class="container">
-            <h2 class="section-title">POR QUE ESCOLHER A <span class="highlight">ELITE?</span></h2>
-            <div class="feature-grid">
-                <div class="feature-card tilt-effect">
-                    <i class="fas fa-crosshairs"></i>
-                    <h3>Full Capa</h3>
-                    <p>Aumente drasticamente sua taxa de HS com nossa configuraÃ§Ã£o calibrada.</p>
+            <div class="section-header">
+                <span class="section-badge">📚 Conteúdo Completo</span>
+                <h2 class="section-title">O Que Vais <span class="gradient-text">Aprender</span></h2>
+                <p class="section-subtitle">Módulos práticos desenvolvidos com base na realidade moçambicana</p>
+            </div>
+            
+            <div class="modules-grid">
+                <!-- Módulo 1 -->
+                <div class="module-card" data-aos="fade-up">
+                    <div class="module-icon">
+                        <i class="fas fa-lightbulb"></i>
+                        <span class="module-number">01</span>
+                    </div>
+                    <h3>Fundamentos do Marketing Digital</h3>
+                    <p>Entende como o mercado online funciona e quais são as melhores oportunidades em Moçambique.</p>
+                    <ul class="module-topics">
+                        <li><i class="fas fa-check"></i> Conceitos essenciais</li>
+                        <li><i class="fas fa-check"></i> Oportunidades locais</li>
+                        <li><i class="fas fa-check"></i> Mindset digital</li>
+                    </ul>
                 </div>
-                <div class="feature-card tilt-effect">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>OtimizaÃ§Ã£o Mobile</h3>
-                    <p>Leve e otimizado para nÃ£o pesar no seu celular. Roda liso.</p>
+
+                <!-- Módulo 2 -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="module-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                        <span class="module-number">02</span>
+                    </div>
+                    <h3>Criação de Conteúdo Estratégico</h3>
+                    <p>Aprende a criar posts, vídeos e campanhas que atraem atenção e geram vendas.</p>
+                    <ul class="module-topics">
+                        <li><i class="fas fa-check"></i> Copywriting persuasivo</li>
+                        <li><i class="fas fa-check"></i> Produção de vídeos</li>
+                        <li><i class="fas fa-check"></i> Design para redes sociais</li>
+                    </ul>
                 </div>
-                <div class="feature-card tilt-effect">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>100% Seguro</h3>
-                    <p>MÃ©todos indetectÃ¡veis. Jogue na sua conta principal sem medo.</p>
+
+                <!-- Módulo 3 -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="module-icon">
+                        <i class="fas fa-users"></i>
+                        <span class="module-number">03</span>
+                    </div>
+                    <h3>Gestão de Redes Sociais</h3>
+                    <p>Descobre como crescer no Facebook, Instagram, TikTok e outras plataformas com técnicas comprovadas.</p>
+                    <ul class="module-topics">
+                        <li><i class="fas fa-check"></i> Algoritmos das redes</li>
+                        <li><i class="fas fa-check"></i> Engajamento orgânico</li>
+                        <li><i class="fas fa-check"></i> Calendário de postagens</li>
+                    </ul>
                 </div>
-                <div class="feature-card tilt-effect">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Entrega Imediata</h3>
-                    <p>Receba seu acesso e tutorial de instalaÃ§Ã£o logo apÃ³s a compra.</p>
+
+                <!-- Módulo 4 -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="module-icon">
+                        <i class="fas fa-bullseye"></i>
+                        <span class="module-number">04</span>
+                    </div>
+                    <h3>Tráfego Pago e Anúncios Online</h3>
+                    <p>Aprende a investir pouco e alcançar milhares de pessoas com campanhas eficazes.</p>
+                    <ul class="module-topics">
+                        <li><i class="fas fa-check"></i> Facebook & Instagram Ads</li>
+                        <li><i class="fas fa-check"></i> Segmentação avançada</li>
+                        <li><i class="fas fa-check"></i> Otimização de campanhas</li>
+                    </ul>
+                </div>
+
+                <!-- Módulo 5 -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="module-icon">
+                        <i class="fas fa-robot"></i>
+                        <span class="module-number">05</span>
+                    </div>
+                    <h3>Automação e Funis de Vendas</h3>
+                    <p>Cria sistemas automáticos que trabalham por ti 24h por dia.</p>
+                    <ul class="module-topics">
+                        <li><i class="fas fa-check"></i> Email marketing</li>
+                        <li><i class="fas fa-check"></i> Chatbots e automações</li>
+                        <li><i class="fas fa-check"></i> Funis de conversão</li>
+                    </ul>
+                </div>
+
+                <!-- Módulo 6 -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="module-icon">
+                        <i class="fas fa-star"></i>
+                        <span class="module-number">06</span>
+                    </div>
+                    <h3>Branding e Posicionamento Pessoal</h3>
+                    <p>Constrói uma marca forte e profissional no digital que te diferencia da concorrência.</p>
+                    <ul class="module-topics">
+                        <li><i class="fas fa-check"></i> Identidade visual</li>
+                        <li><i class="fas fa-check"></i> Autoridade online</li>
+                        <li><i class="fas fa-check"></i> Storytelling</li>
+                    </ul>
+                </div>
+
+                <!-- Módulo 7 -->
+                <div class="module-card featured" data-aos="fade-up" data-aos-delay="600">
+                    <div class="featured-badge">⭐ Módulo Bónus</div>
+                    <div class="module-icon">
+                        <i class="fas fa-coins"></i>
+                        <span class="module-number">07</span>
+                    </div>
+                    <h3>Monetização e Fontes de Renda</h3>
+                    <p>Descobre diferentes formas de ganhar dinheiro online de forma consistente.</p>
+                    <ul class="module-topics">
+                        <li><i class="fas fa-check"></i> Marketing de afiliados</li>
+                        <li><i class="fas fa-check"></i> Produtos digitais</li>
+                        <li><i class="fas fa-check"></i> Prestação de serviços</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="produtos" class="pricing">
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="benefits">
         <div class="container">
-            <h2 class="section-title">NOSSOS <span class="highlight">ARSENAIS</span></h2>
-            <div class="pricing-grid">
-                <!-- Produto 1 -->
-                <div class="pricing-card tilt-effect">
-                    <div class="badge">MAIS VENDIDO</div>
-                    <h3>Pacote Iniciante</h3>
-                    <div class="price">250 MT</div>
-                    <ul class="specs">
-                        <li><i class="fas fa-check"></i> Regedit Mobile V1</li>
-                        <li><i class="fas fa-check"></i> Sensi Calibrada</li>
-                        <li><i class="fas fa-check"></i> Suporte BÃ¡sico</li>
-                        <li><i class="fas fa-check"></i> Anti-Ban</li>
-                    </ul>
-                    <button class="btn-buy" onclick="alert('Link de pagamento simulado!')">COMPRAR AGORA</button>
+            <div class="section-header">
+                <span class="section-badge">✨ Porquê Escolher</span>
+                <h2 class="section-title">Por Que Este Curso é <span class="gradient-text">Diferente</span></h2>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Feito para Moçambique</h3>
+                    <p>Conteúdo desenvolvido especificamente para a realidade do mercado moçambicano, com exemplos e estratégias locais.</p>
                 </div>
 
-                <!-- Produto 2 -->
-                <div class="pricing-card featured tilt-effect">
-                    <div class="badge glow">PRO PLAYER</div>
-                    <h3>Pack Elite X</h3>
-                    <div class="price">500 MT</div>
-                    <ul class="specs">
-                        <li><i class="fas fa-check"></i> Regedit Mobile V2 (VIP)</li>
-                        <li><i class="fas fa-check"></i> Sensi iPhone & Android</li>
-                        <li><i class="fas fa-check"></i> Macro Otimizado</li>
-                        <li><i class="fas fa-check"></i> Pack de Cursor</li>
-                        <li><i class="fas fa-check"></i> Suporte PrioritÃ¡rio 24/7</li>
-                    </ul>
-                    <button class="btn-buy" onclick="alert('Link de pagamento simulado!')">QUERO SER PRO</button>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Baixo Investimento</h3>
+                    <p>Aprende a começar mesmo com recursos limitados. As técnicas funcionam com qualquer orçamento.</p>
                 </div>
 
-                <!-- Produto 3 -->
-                <div class="pricing-card tilt-effect">
-                    <h3>Sensi Avulsa</h3>
-                    <div class="price">150 MT</div>
-                    <ul class="specs">
-                        <li><i class="fas fa-check"></i> Apenas Sensi VIP</li>
-                        <li><i class="fas fa-check"></i> Ajuste de DPI</li>
-                        <li><i class="fas fa-check"></i> Tutorial em VÃ­deo</li>
-                        <li><i class="fas fa-times"></i> Sem Regedit</li>
-                    </ul>
-                    <button class="btn-buy" onclick="alert('Link de pagamento simulado!')">COMPRAR AGORA</button>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Do Zero ao Avançado</h3>
+                    <p>Não precisas de experiência prévia. O curso te guia passo a passo desde o básico até estratégias avançadas.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>100% Online & Prático</h3>
+                    <p>Acessa de qualquer lugar e a qualquer hora. Aulas práticas com exercícios aplicáveis imediatamente.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Acesso Vitalício</h3>
+                    <p>Compre uma vez, acesse para sempre. Incluindo todas as atualizações futuras sem custo adicional.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Dedicado</h3>
+                    <p>Tire suas dúvidas diretamente com a equipa. Estamos aqui para te ajudar a ter sucesso.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Transformação Section -->
+    <section class="transformation">
+        <div class="container">
+            <div class="transform-content">
+                <div class="transform-before">
+                    <h3>😔 Antes do Curso</h3>
+                    <ul>
+                        <li><i class="fas fa-times"></i> Sem saber por onde começar</li>
+                        <li><i class="fas fa-times"></i> Dependente de emprego tradicional</li>
+                        <li><i class="fas fa-times"></i> Sem presença online profissional</li>
+                        <li><i class="fas fa-times"></i> Perdido no mundo digital</li>
+                        <li><i class="fas fa-times"></i> Renda limitada</li>
+                    </ul>
+                </div>
+                <div class="transform-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="transform-after">
+                    <h3>🚀 Depois do Curso</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Caminho claro e definido</li>
+                        <li><i class="fas fa-check"></i> Múltiplas fontes de renda online</li>
+                        <li><i class="fas fa-check"></i> Marca pessoal forte</li>
+                        <li><i class="fas fa-check"></i> Domínio das ferramentas digitais</li>
+                        <li><i class="fas fa-check"></i> Liberdade financeira</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
     <section id="depoimentos" class="testimonials">
         <div class="container">
-            <h2 class="section-title">QUEM USA <span class="highlight">APROVA</span></h2>
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <div class="testimonial-card">
-                        <div class="user-info">
-                            <div class="avatar"><i class="fas fa-user-ninja"></i></div>
-                            <h4>Gabriel "HsKing"</h4>
+            <div class="section-header">
+                <span class="section-badge">💬 Histórias Reais</span>
+                <h2 class="section-title">O Que Dizem os <span class="gradient-text">Alunos</span></h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
                         </div>
-                        <p class="comment">"Achei que era mentira, mas a Sensi Ã© absurda. Subi pra Mestre em 3 dias.
-                            Recomendo demais!"</p>
-                        <div class="rating">â­â­â­â­â­</div>
+                        <div class="testimonial-info">
+                            <h4>Carlos Machava</h4>
+                            <span>Empresário Digital</span>
+                        </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="user-info">
-                            <div class="avatar"><i class="fas fa-user-astronaut"></i></div>
-                            <h4>Lucas "CapaEasy"</h4>
-                        </div>
-                        <p class="comment">"Melhor investimento. NÃ£o dÃ¡ ban e a mira gruda na cabeÃ§a. O suporte me
-                            ajudou a configurar tudo."</p>
-                        <div class="rating">â­â­â­â­â­</div>
+                    <p class="testimonial-text">"Antes do curso, eu não fazia ideia de como monetizar online. Hoje tenho minha própria loja digital e já faturei mais de 50.000 MT em 3 meses!"</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="user-info">
-                            <div class="avatar"><i class="fas fa-skull"></i></div>
-                            <h4>Matheus "Sniper"</h4>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
                         </div>
-                        <p class="comment">"Uso no campeonato e ninguÃ©m desconfia. Regedit muito lisa, parabÃ©ns pelo
-                            trabalho!"</p>
-                        <div class="rating">â­â­â­â­â­</div>
+                        <div class="testimonial-info">
+                            <h4>Ana Mondlane</h4>
+                            <span>Social Media Manager</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"O módulo de redes sociais mudou minha vida! Consegui 5 clientes como gestora de redes sociais em apenas 2 semanas após terminar o curso."</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Pedro Tembe</h4>
+                            <span>Afiliado Digital</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"O conteúdo sobre marketing de afiliados é incrível. Finalmente entendi como funciona e já estou a receber comissões toda semana!"</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="faq">
+    <!-- Inscrição Section -->
+    <section id="inscricao" class="pricing">
         <div class="container">
-            <h2 class="section-title">DÃšVIDAS <span class="highlight">FREQUENTES</span></h2>
-            <div class="faq-item">
-                <h3>Funciona em quais celulares?</h3>
-                <p>Nossa Regedit Ã© compatÃ­vel com 99% dos dispositivos Android e tambÃ©m temos configuraÃ§Ãµes para iOS.
-                </p>
+            <div class="section-header">
+                <span class="section-badge">🎯 Oferta Especial</span>
+                <h2 class="section-title">Garanta Sua <span class="gradient-text">Vaga Agora</span></h2>
+                <p class="section-subtitle">Investimento único com acesso vitalício</p>
             </div>
-            <div class="faq-item">
-                <h3>DÃ¡ ban?</h3>
-                <p>NÃ£o! Utilizamos apenas arquivos de otimizaÃ§Ã£o de sensibilidade que nÃ£o alteram a memÃ³ria do jogo de
-                    forma maliciosa.</p>
+
+            <div class="pricing-card-wrapper">
+                <div class="pricing-card-main">
+                    <div class="pricing-badge">🔥 Mais Escolhido</div>
+                    <h3>Acesso Completo</h3>
+                    <div class="pricing-original">
+                        <span class="original-price">De 5.000 MT</span>
+                        <span class="discount-badge">-60%</span>
+                    </div>
+                    <div class="pricing-value">
+                        <span class="currency">MT</span>
+                        <span class="price">2.000</span>
+                        <span class="period">/ único</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 7 Módulos completos</li>
+                        <li><i class="fas fa-check-circle"></i> +50 aulas em vídeo HD</li>
+                        <li><i class="fas fa-check-circle"></i> Material de apoio em PDF</li>
+                        <li><i class="fas fa-check-circle"></i> Exercícios práticos</li>
+                        <li><i class="fas fa-check-circle"></i> Acesso vitalício</li>
+                        <li><i class="fas fa-check-circle"></i> Atualizações gratuitas</li>
+                        <li><i class="fas fa-check-circle"></i> Suporte via WhatsApp</li>
+                        <li><i class="fas fa-check-circle"></i> Certificado de conclusão</li>
+                        <li><i class="fas fa-gift"></i> <strong>BÓNUS:</strong> Grupo VIP de alunos</li>
+                    </ul>
+                    <a href="#" class="btn-buy-main">
+                        <span>Quero Me Inscrever Agora</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="security-badges">
+                        <span><i class="fas fa-lock"></i> Pagamento Seguro</span>
+                        <span><i class="fas fa-shield-alt"></i> Garantia 7 dias</span>
+                    </div>
+                </div>
             </div>
-            <div class="faq-item">
-                <h3>Como recebo?</h3>
-                <p>O envio Ã© automÃ¡tico para seu e-mail ou WhatsApp apÃ³s a confirmaÃ§Ã£o do pagamento.</p>
+
+            <div class="payment-methods">
+                <p>Formas de pagamento aceitas:</p>
+                <div class="payment-icons">
+                    <span><i class="fas fa-mobile-alt"></i> M-Pesa</span>
+                    <span><i class="fas fa-mobile-alt"></i> E-Mola</span>
+                    <span><i class="fas fa-university"></i> Transferência</span>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">❓ Dúvidas</span>
+                <h2 class="section-title">Perguntas <span class="gradient-text">Frequentes</span></h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Preciso de experiência prévia em marketing?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não! O curso foi desenhado para iniciantes completos. Começamos do absoluto zero e vamos até estratégias avançadas, passo a passo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quanto tempo leva para ver resultados?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Depende da sua dedicação! Alunos que aplicam o conteúdo consistentemente começam a ver resultados já nas primeiras semanas. O importante é colocar em prática.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Por quanto tempo tenho acesso ao curso?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Acesso vitalício! Você compra uma vez e tem acesso para sempre, incluindo todas as atualizações futuras sem custo adicional.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quais formas de pagamento são aceitas?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceitamos M-Pesa, E-Mola e transferência bancária. Depois do pagamento, você recebe acesso imediato ao curso.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>O curso funciona para qualquer tipo de negócio?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! As estratégias ensinadas podem ser aplicadas a qualquer nicho ou tipo de negócio, seja produto físico, digital ou serviços.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>E se eu não gostar do curso?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos garantia de 7 dias! Se não estiver satisfeito por qualquer motivo, devolvemos 100% do seu dinheiro, sem perguntas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para <span class="gradient-text">Transformar</span> Sua Vida?</h2>
+                <p>Junte-se a centenas de moçambicanos que já estão a construir seu futuro digital. A sua jornada começa agora!</p>
+                <a href="#inscricao" class="btn-primary-large">
+                    <span>Quero Começar Minha Jornada</span>
+                    <i class="fas fa-rocket"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Elite Regedit. Todos os direitos reservados.</p>
-            <div class="socials">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🚀</span>
+                        <span class="logo-text">Dominando<span class="highlight">Digital</span></span>
+                    </div>
+                    <p>Transformando moçambicanos em profissionais digitais de sucesso.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#modulos">Módulos</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#inscricao">Inscrição</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fab fa-whatsapp"></i> +258 84 XXX XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@dominandodigital.co.mz</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dominando o Digital. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/?text=Tenho%20interesse%20no%20Regedit" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/258?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20curso%20Dominando%20o%20Digital" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Fale conosco!</span>
     </a>
 
-    <!-- Particles.js (Optional CDN for advanced particles, but we'll use CSS/Simple JS for now to keep it lightweight) -->
     <script src="js/script.js"></script>
 
-<!-- Vercel Analytics -->
-<script>
-(function(){if(window.location.hostname.includes('vercel.app')||document.querySelector('script[src*="/_vercel/insights"]')){var s=document.createElement('script');s.defer=true;s.src='/_vercel/insights/script.js';document.head.appendChild(s);var sp=document.createElement('script');sp.defer=true;sp.src='/_vercel/speed-insights/script.js';document.head.appendChild(sp);}})();
-</script>
+    <!-- Vercel Analytics -->
+    <script>
+    (function(){if(window.location.hostname.includes('vercel.app')||document.querySelector('script[src*="/_vercel/insights"]')){var s=document.createElement('script');s.defer=true;s.src='/_vercel/insights/script.js';document.head.appendChild(s);var sp=document.createElement('script');sp.defer=true;sp.src='/_vercel/speed-insights/script.js';document.head.appendChild(sp);}})();
+    </script>
 </body>
 
 </html>
-
