@@ -887,79 +887,192 @@ nav a:hover::after {
 }
 
 /* ============================================
-   TESTIMONIALS SECTION
+   TESTIMONIALS SECTION - WhatsApp Style
    ============================================ */
 .testimonials {
     padding: 100px 0;
     background: var(--bg-darker);
 }
 
-.testimonials-grid {
+.whatsapp-testimonials {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
 }
 
-.testimonial-card {
-    background: var(--bg-card);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+.whatsapp-message {
+    background: #0B141A;
     border-radius: var(--radius-lg);
-    padding: 35px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
     transition: var(--transition);
 }
 
-.testimonial-card:hover {
+.whatsapp-message:hover {
     transform: translateY(-5px);
-    border-color: rgba(236, 72, 153, 0.3);
-    box-shadow: var(--shadow-glow-pink);
+    border-color: rgba(37, 211, 102, 0.3);
+    box-shadow: 0 10px 40px rgba(37, 211, 102, 0.1);
 }
 
-.testimonial-header {
+.message-header {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.testimonial-avatar {
-    width: 60px;
-    height: 60px;
+.contact-avatar {
+    width: 45px;
+    height: 45px;
     background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.testimonial-avatar i {
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
     color: white;
 }
 
-.testimonial-info h4 {
-    font-size: 1.1rem;
-    margin-bottom: 3px;
+.contact-info {
+    display: flex;
+    flex-direction: column;
 }
 
-.testimonial-info span {
-    font-size: 0.85rem;
+.contact-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
+.contact-time {
+    font-size: 0.75rem;
     color: var(--text-muted);
 }
 
-.testimonial-text {
-    color: var(--text-secondary);
-    font-style: italic;
-    line-height: 1.8;
-    margin-bottom: 20px;
+.message-bubble {
+    background: #1F2C34;
+    padding: 10px 14px;
+    border-radius: 0 12px 12px 12px;
+    margin-bottom: 8px;
+    position: relative;
+    max-width: 95%;
 }
 
-.testimonial-rating {
-    color: #FBBF24;
-    font-size: 1rem;
+.message-bubble:first-of-type {
+    border-radius: 12px 12px 12px 0;
 }
 
-.testimonial-rating i {
-    margin-right: 3px;
+.message-bubble.received {
+    background: #1F2C34;
+    margin-left: 0;
+}
+
+.message-bubble p {
+    color: var(--text-main);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.msg-time {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    float: right;
+    margin-top: 2px;
+}
+
+/* ============================================
+   PURCHASE NOTIFICATIONS
+   ============================================ */
+.purchase-notification {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 9998;
+    box-shadow: var(--shadow-lg);
+    transform: translateX(-120%);
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    max-width: 320px;
+}
+
+.purchase-notification.show {
+    transform: translateX(0);
+}
+
+.notification-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.notification-icon i {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-content p {
+    font-size: 0.85rem;
+    color: var(--text-main);
+    margin-bottom: 3px;
+}
+
+.notification-content p strong {
+    color: var(--accent-color);
+}
+
+.notification-content span {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.notification-close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+.notification-close:hover {
+    color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+    .purchase-notification {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        max-width: calc(100% - 30px);
+    }
+
+    .whatsapp-testimonials {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ============================================

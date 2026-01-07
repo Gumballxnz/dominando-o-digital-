@@ -3,14 +3,14 @@
    Interações e Animações
    ============================================ */
 
-document.addEventListener('DOMContentLoaded', function() {
-    
+document.addEventListener('DOMContentLoaded', function () {
+
     // ============================================
     // Header Scroll Effect
     // ============================================
     const header = document.getElementById('header');
-    
-    window.addEventListener('scroll', function() {
+
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const nav = document.getElementById('nav');
-    
+
     if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', function() {
+        mobileMenuBtn.addEventListener('click', function () {
             nav.classList.toggle('active');
-            
+
             // Muda o ícone
             const icon = mobileMenuBtn.querySelector('i');
             if (nav.classList.contains('active')) {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fecha menu ao clicar num link
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             if (nav.classList.contains('active')) {
                 nav.classList.remove('active');
                 const icon = mobileMenuBtn.querySelector('i');
@@ -57,18 +57,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // FAQ Accordion
     // ============================================
     const faqItems = document.querySelectorAll('.faq-item');
-    
+
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
-        
-        question.addEventListener('click', function() {
+
+        question.addEventListener('click', function () {
             // Fecha outros itens abertos
             faqItems.forEach(otherItem => {
                 if (otherItem !== item && otherItem.classList.contains('active')) {
                     otherItem.classList.remove('active');
                 }
             });
-            
+
             // Toggle do item clicado
             item.classList.toggle('active');
         });
@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth Scroll para links âncora
     // ============================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 const headerOffset = 80;
@@ -143,23 +143,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const animateStats = () => {
         if (statsAnimated) return;
-        
+
         const heroSection = document.getElementById('inicio');
         const heroRect = heroSection.getBoundingClientRect();
-        
+
         if (heroRect.top < window.innerHeight && heroRect.bottom > 0) {
             statsAnimated = true;
-            
+
             statNumbers.forEach(stat => {
                 const finalValue = stat.textContent;
                 const isNumber = /^\d+/.test(finalValue);
-                
+
                 if (isNumber) {
                     const number = parseInt(finalValue);
                     const suffix = finalValue.replace(/\d+/, '');
                     let current = 0;
                     const increment = number / 30;
-                    
+
                     const timer = setInterval(() => {
                         current += increment;
                         if (current >= number) {
@@ -180,22 +180,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Efeito de hover nos cards com parallax leve
     // ============================================
     const cards = document.querySelectorAll('.module-card, .pricing-card-main');
-    
+
     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-            
+
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
-            
+
             const rotateX = (y - centerY) / 20;
             const rotateY = (centerX - x) / 20;
-            
+
             card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
         });
-        
+
         card.addEventListener('mouseleave', () => {
             card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
         });
@@ -207,10 +207,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const addTypingEffect = () => {
         const gradientText = document.querySelector('.hero-content .gradient-text');
         if (!gradientText) return;
-        
+
         const originalText = gradientText.textContent;
         gradientText.textContent = '';
-        
+
         let i = 0;
         const typeWriter = () => {
             if (i < originalText.length) {
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(typeWriter, 80);
             }
         };
-        
+
         // Inicia após um pequeno delay
         setTimeout(typeWriter, 500);
     };
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Lazy loading para imagens (se houver)
     // ============================================
     const lazyImages = document.querySelectorAll('img[data-src]');
-    
+
     const imageObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Botão WhatsApp - mostrar/esconder baseado no scroll
     // ============================================
     const whatsappBtn = document.querySelector('.whatsapp-float');
-    
+
     if (whatsappBtn) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
@@ -285,7 +285,79 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('%c🚀 Dominando o Digital', 'font-size: 24px; font-weight: bold; color: #6366F1;');
     console.log('%cTransformando moçambicanos em profissionais digitais!', 'font-size: 14px; color: #EC4899;');
 
+    // ============================================
+    // Notificações de Compra (Social Proof)
+    // ============================================
+    const purchaseNotification = document.getElementById('purchaseNotification');
+    const buyerNameEl = document.getElementById('buyerName');
+    const purchaseTimeEl = document.getElementById('purchaseTime');
+
+    // Lista de nomes para as notificações
+    const buyers = [
+        { name: 'João M.', city: 'Maputo' },
+        { name: 'Ana S.', city: 'Beira' },
+        { name: 'Pedro L.', city: 'Nampula' },
+        { name: 'Márcia T.', city: 'Matola' },
+        { name: 'Carlos N.', city: 'Quelimane' },
+        { name: 'Sofia R.', city: 'Tete' },
+        { name: 'André M.', city: 'Chimoio' },
+        { name: 'Luísa F.', city: 'Xai-Xai' },
+        { name: 'Miguel A.', city: 'Pemba' },
+        { name: 'Rosa C.', city: 'Lichinga' },
+        { name: 'Fernando G.', city: 'Inhambane' },
+        { name: 'Helena B.', city: 'Maputo' }
+    ];
+
+    const timeAgo = [
+        'agora mesmo',
+        'há 2 minutos',
+        'há 5 minutos',
+        'há 8 minutos',
+        'há 15 minutos',
+        'há 23 minutos',
+        'há 1 hora'
+    ];
+
+    let notificationIndex = 0;
+    let notificationInterval;
+
+    function showNotification() {
+        if (!purchaseNotification) return;
+
+        // Escolhe um comprador aleatório
+        const buyer = buyers[Math.floor(Math.random() * buyers.length)];
+        const time = timeAgo[Math.floor(Math.random() * timeAgo.length)];
+
+        buyerNameEl.textContent = buyer.name + ' de ' + buyer.city;
+        purchaseTimeEl.textContent = time;
+
+        // Mostra a notificação
+        purchaseNotification.classList.add('show');
+
+        // Esconde após 5 segundos
+        setTimeout(() => {
+            purchaseNotification.classList.remove('show');
+        }, 5000);
+    }
+
+    // Inicia as notificações após 8 segundos
+    setTimeout(() => {
+        showNotification();
+        // Mostra uma nova notificação a cada 25-40 segundos
+        notificationInterval = setInterval(() => {
+            showNotification();
+        }, Math.random() * 15000 + 25000);
+    }, 8000);
+
 });
+
+// Função global para fechar notificação
+function closeNotification() {
+    const notification = document.getElementById('purchaseNotification');
+    if (notification) {
+        notification.classList.remove('show');
+    }
+}
 
 // ============================================
 // Service Worker Registration (para PWA futuro)
